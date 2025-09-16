@@ -6,72 +6,57 @@
   <title>เสียงใหญ่เรคคอร์ด - SiangYai Records</title>
   <link rel="icon" type="image/png" href="1-removebg-preview.png">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .page { display: none; }
+    .active { display: block; }
+  </style>
 </head>
-<body>
+<body class="bg-gray-900 text-white">
 
   <!-- Header -->
-<header class="gradient-bg text-white py-16">
-  <div class="flex items-center justify-between bg-gradient-to-r from-purple-700 via-pink-600 to-pink-500 px-8 py-6">
+  <header class="bg-gradient-to-r from-purple-700 via-pink-600 to-pink-500 py-10 text-center">
+    <h1 class="text-4xl font-bold">เสียงใหญ่เรคคอร์ด</h1>
+    <p class="text-lg">SiangYai Records – สร้างสรรค์เสียงเพลงเพื่อทุกคน</p>
+  </header>
 
-    <!-- โลโก้ซ้าย -->
-    <div class="flex-shrink-0">
-      <img src="2-removebg-preview.png" alt="โลโก้" class="h-24">
-    </div>
+  <!-- Main Content -->
+  <main class="p-10 text-center">
 
-    <!-- ข้อความตรงกลาง -->
-    <div class="flex-1 text-center">
-      <h1 class="text-3xl font-extrabold text-white">เสียงใหญ่เรคคอร์ด</h1>
-      <p class="text-white text-lg">SiangYai Records – สร้างสรรค์เสียงเพลงเพื่อทุกคน</p>
-    </div>
+    <!-- หน้าแรก -->
+    <section id="page0" class="page active">
+      <h2 class="text-3xl text-pink-400 mb-4">🎶 ยินดีต้อนรับ</h2>
+      <p>นี่คือ <b>หน้าแรก</b> ของเว็บไซต์ค่ายเพลง <b>เสียงใหญ่เรคคอร์ด</b></p>
+    </section>
 
-    <!-- ด้านขวา เว้นว่างไว้เผื่อใส่ปุ่มเมนู -->
-    <div class="w-16"></div>
-  </div>
-</header>
-  
-  <!-- Navigation -->
-  <nav class="bg-black text-white py-4 flex justify-center gap-8 font-semibold">
-    <a href="#home" class="hover:text-pink-400">หน้าแรก</a>
-    <a href="#artists" class="hover:text-pink-400">ศิลปิน</a>
-    <a href="#music" class="hover:text-pink-400">เพลงใหม่</a>
-    <a href="#about" class="hover:text-pink-400">เกี่ยวกับ</a>
-    <a href="#contact" class="hover:text-pink-400">ติดต่อ</a>
-  </nav>
- 
-  <!-- Artists Section -->
-  <section id="artists" class="py-16 bg-gray-900">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-pink-400 mb-12">🎤 ศิลปินแนะนำ</h2>
+    <!-- หน้า 1 : ศิลปิน -->
+    <section id="page1" class="page">
+      <h2 class="text-4xl font-bold text-pink-400 mb-8">🎤 ศิลปินแนะนำ</h2>
       <div class="grid md:grid-cols-2 gap-8">
-        <div class="card-hover bg-gray-800 p-6 rounded-lg text-center">
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
           <img src="FB_IMG_1721805977706 (1)" alt="MKLG" class="mx-auto rounded-lg mb-4">
           <h3 class="text-xl font-semibold">MKLG ก้านกล้วย</h3>
-          <p class="text-gray-300">ศิลปินฮิปฮอปลูกทุ่งสุดปังจากกำแพงเพชร</p>
+          <p class="text-gray-300">ศิลปินฮิปฮอปแร็พลูกทุ่งสุดปังจากกำแพงเพชร</p>
         </div>
-        <div class="card-hover bg-gray-800 p-6 rounded-lg text-center">
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
           <img src="dl8wyc (1)" alt="MPLG" class="mx-auto rounded-lg mb-4">
           <h3 class="text-xl font-semibold">MPLG เปตอง</h3>
-          <p class="text-gray-300">ศิลปินสไตล์แร็พ มาพร้อมพลังเสียงและความจริงใจ</p>
+          <p class="text-gray-300">อีกหนึ่งศิลปินสไตล์ฮิปฮอปลูกทุ่งสุดปังจากกำแพงเพชร มาพร้อมพลังเสียงและความจริงใจ</p>
         </div>
-        <div class="card-hover bg-gray-800 p-6 rounded-lg text-center">
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
           <img src="1710593711764" alt="Jazzy Cheese" class="mx-auto rounded-lg mb-4">
           <h3 class="text-xl font-semibold">Jazzy Cheese</h3>
           <p class="text-gray-300">ศิลปินลูกครึ่งไทย-อังกฤษสุดปังจากกำแพงเพชร</p>
         </div>
-        <div class="card-hover bg-gray-800 p-6 rounded-lg text-center">
-          <img src="469690395_122145577892339286_7155441008508316236_n" alt="กระเพรา แมวเหมียว (Cat Meaw)" class="mx-auto rounded-lg mb-4">
+        <div class="bg-gray-800 p-6 rounded-lg text-center">
+          <img src="469690395_122145577892339286_7155441008508316236_n" alt="Cat Meaw" class="mx-auto rounded-lg mb-4">
           <h3 class="text-xl font-semibold">กระเพรา แมวเหมียว (Cat Meaw)</h3>
           <p class="text-gray-300">น้องสาวของ MKLG ก้านกล้วย</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Music Section -->
-  <section id="music" class="py-16 bg-gray-800">
-    <div class="container mx-auto px-6 text-center">
+    <!-- หน้า 2 : เพลงใหม่ -->
+    <section id="page2" class="page">
       <h2 class="text-4xl font-bold text-pink-400 mb-8">🎶 เพลงใหม่ล่าสุด</h2>
       <div class="bg-gray-900 p-8 rounded-lg inline-block">
         <h3 class="text-2xl font-semibold mb-2">ถิ่นกู</h3>
@@ -81,86 +66,79 @@
           เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
         </audio>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-900">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-pink-400 mb-8">ℹ️ เกี่ยวกับค่าย</h2>
+    <!-- หน้า 3 : เกี่ยวกับ -->
+    <section id="page3" class="page">
+      <h2 class="text-4xl font-bold text-pink-400 mb-8">ℹ️ เกี่ยวกับค่าย</h2>
       <p class="text-center max-w-3xl mx-auto text-gray-300">
         เสียงใหญ่เรคคอร์ด (SiangYai Records) คือค่ายเพลงที่มุ่งมั่นในการผลักดันศิลปินรุ่นใหม่ 
         และสร้างสรรค์ผลงานเพลงที่มีคุณภาพ เพื่อตอบโจทย์คนฟังทุกเจนเนอเรชัน
       </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 gradient-bg">
-    <div class="container mx-auto px-6">
-      <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-xl p-8 text-gray-800">
-        <h2 class="text-3xl font-bold text-center mb-8">ติดต่อค่าย</h2>
-        <form class="space-y-6" onsubmit="handleSubmit(event)">
-          <div>
-            <label class="block font-medium mb-2">ชื่อ-นามสกุล</label>
-            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="กรอกชื่อ-นามสกุล">
-          </div>
-          <div>
-            <label class="block font-medium mb-2">อีเมล</label>
-            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="example@mail.com">
-          </div>
-          <div>
-            <label class="block font-medium mb-2">ข้อความ</label>
-            <textarea required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" rows="4" placeholder="พิมพ์ข้อความของคุณ..."></textarea>
-          </div>
-          <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-pink-700 transition duration-300">
-            ส่งข้อความ 🎵
-          </button>
-        </form>
-
-        <!-- ช่องทางโซเชียล -->
-        <div class="mt-10 text-center">
-          <h3 class="text-xl font-semibold mb-4">📱 ช่องทางการติดต่อ</h3>
-          <div class="flex justify-center gap-6 text-gray-600 text-3xl">
-            <a href="https://www.instagram.com/bigsound_2022/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100083223202133&locale=th_TH" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.youtube.com/@BigsoundRecords-2022" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="patongmusicfunny@gmail.com" class="hover:text-green-600 transition">
-              ✉️
-            </a>
-          </div>
+    <!-- หน้า 4 : ติดต่อ -->
+    <section id="page4" class="page">
+      <h2 class="text-3xl font-bold text-center mb-8">📞 ติดต่อค่าย</h2>
+      <form class="space-y-6 max-w-2xl mx-auto bg-white text-gray-800 p-8 rounded-lg" onsubmit="handleSubmit(event)">
+        <div>
+          <label class="block font-medium mb-2">ชื่อ-นามสกุล</label>
+          <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg">
         </div>
-
-        <div id="successMsg" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-          ✅ ขอบคุณที่ติดต่อเรา! ทีมงานจะตอบกลับในเร็ว ๆ นี้
+        <div>
+          <label class="block font-medium mb-2">อีเมล</label>
+          <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg">
         </div>
+        <div>
+          <label class="block font-medium mb-2">ข้อความ</label>
+          <textarea required class="w-full px-4 py-3 border border-gray-300 rounded-lg" rows="4"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-pink-700">
+          ส่งข้อความ 🎵
+        </button>
+      </form>
+      <div id="successMsg" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg max-w-lg mx-auto">
+        ✅ ขอบคุณที่ติดต่อเรา! ทีมงานจะตอบกลับในเร็ว ๆ นี้
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-black text-white py-10 text-center">
-    <div class="text-2xl mb-2">🎵</div>
-    <h3 class="text-xl font-bold mb-2">เสียงใหญ่เรคคอร์ด</h3>
-    <p class="text-gray-400 mb-4">© 2025 SiangYai Records. All rights reserved.</p>
-    <div class="flex justify-center gap-6 text-gray-400 text-2xl">
-  <a href="https://www.instagram.com/bigsound_2022/" target="_blank" class="hover:text-pink-500">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=100083223202133&locale=th_TH" target="_blank" class="hover:text-blue-600">
-    <i class="fa-brands fa-facebook-f"></i>
-  </a>
-  <a href="https://www.youtube.com/@BigsoundRecords-2022" target="_blank" class="hover:text-red-600">
-    <i class="fa-brands fa-youtube"></i>
-  </a>
-  <a href="mailto:patongmusicfunny@gmail.com" class="hover:text-green-600">
-    <i class="fa-solid fa-envelope"></i>
-  </a>
-</div>
-  </footer>
+    <!-- หน้า 5 : ช่องทางโซเชียล -->
+    <section id="page5" class="page">
+      <h2 class="text-3xl font-bold text-center mb-8">📱 ช่องทางการติดต่อ</h2>
+      <div class="flex justify-center gap-6 text-3xl">
+        <a href="https://www.instagram.com/bigsound_2022/" target="_blank">📸 IG</a>
+        <a href="https://www.facebook.com/profile.php?id=100083223202133" target="_blank">📘 FB</a>
+        <a href="https://www.youtube.com/@BigsoundRecords-2022" target="_blank">▶️ YouTube</a>
+        <a href="mailto:patongmusicfunny@gmail.com">✉️ Email</a>
+      </div>
+    </section>
+
+    <!-- หน้าสุดท้าย -->
+    <section id="pageLast" class="page">
+      <h2 class="text-3xl text-pink-400 mb-4">หน้าสุดท้าย 🎵</h2>
+      <p>© 2025 SiangYai Records. All rights reserved.</p>
+    </section>
+
+  </main>
+
+  <!-- ปุ่มเปลี่ยนหน้า -->
+  <div class="flex justify-center flex-wrap gap-2 py-6">
+    <button onclick="showPage('page0')" class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-pink-500">หน้าแรก</button>
+    <button onclick="showPage('page1')" class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-pink-500">1</button>
+    <button onclick="showPage('page2')" class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-pink-500">2</button>
+    <button onclick="showPage('page3')" class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-pink-500">3</button>
+    <button onclick="showPage('page4')" class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-pink-500">4</button>
+    <button onclick="showPage('page5')" class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-pink-500">5</button>
+    <button onclick="showPage('pageLast')" class="px-4 py-2 bg-gray-700 rounded-lg hover:bg-pink-500">หน้าสุดท้าย</button>
+  </div>
 
   <!-- Script -->
   <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+
     function handleSubmit(event) {
       event.preventDefault();
       document.getElementById("successMsg").classList.remove("hidden");
@@ -173,4 +151,3 @@
 
 </body>
 </html>
-
