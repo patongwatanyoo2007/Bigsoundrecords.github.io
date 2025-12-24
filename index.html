@@ -9,48 +9,43 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  emailjs.init("YOUR_USER_ID"); // ใส่ User ID จาก EmailJS
-</script>
+  <script>
+    emailjs.init("YOUR_USER_ID"); // ← ใส่ User ID จาก EmailJS
+  </script>
 </head>
 <body>
 
+  <!-- Home Section -->
   <section id="home" class="bg-gradient-to-r from-purple-700 via-pink-600 to-pink-500 text-white py-20">
-  <div class="text-center px-6">
-    <h1 class="text-5xl font-extrabold mb-4">ยินดีต้อนรับสู่เสียงใหญ่เรคคอร์ด</h1>
-    <p class="text-xl">ค่ายเพลงที่รวมพลังเสียงจากใจคนไทย เพื่อทุกเจนเนอเรชัน</p>
-  </div>
-</section>
+    <div class="text-center px-6">
+      <h1 class="text-5xl font-extrabold mb-4">ยินดีต้อนรับสู่เสียงใหญ่เรคคอร์ด</h1>
+      <p class="text-xl">ค่ายเพลงที่รวมพลังเสียงจากใจคนไทย เพื่อทุกเจนเนอเรชัน</p>
+    </div>
+  </section>
   
   <!-- Header -->
-<header class="gradient-bg text-white py-16">
-  <div class="flex items-center justify-between bg-gradient-to-r from-purple-700 via-pink-600 to-pink-500 px-8 py-6">
-
-    <!-- โลโก้ซ้าย -->
-    <div class="flex-shrink-0">
-      <img src="2-removebg-preview.png" alt="โลโก้" class="h-24">
+  <header class="gradient-bg text-white py-16">
+    <div class="flex items-center justify-between bg-gradient-to-r from-purple-700 via-pink-600 to-pink-500 px-8 py-6">
+      <div class="flex-shrink-0">
+        <img src="2-removebg-preview.png" alt="โลโก้" class="h-24">
+      </div>
+      <div class="flex-1 text-center">
+        <h1 class="text-3xl font-extrabold text-white">เสียงใหญ่เรคคอร์ด</h1>
+        <p class="text-white text-lg">SiangYai Records – สร้างสรรค์เสียงเพลงเพื่อทุกคน</p>
+      </div>
+      <div class="w-16"></div>
     </div>
-
-    <!-- ข้อความตรงกลาง -->
-    <div class="flex-1 text-center">
-      <h1 class="text-3xl font-extrabold text-white">เสียงใหญ่เรคคอร์ด</h1>
-      <p class="text-white text-lg">SiangYai Records – สร้างสรรค์เสียงเพลงเพื่อทุกคน</p>
-    </div>
-
-    <!-- ด้านขวา เว้นว่างไว้เผื่อใส่ปุ่มเมนู -->
-    <div class="w-16"></div>
-  </div>
-</header>
+  </header>
   
   <!-- Navigation -->
   <nav class="bg-black text-white py-4 flex justify-center gap-8 font-semibold">
-  <a href="#home" class="hover:text-pink-400">หน้าแรก</a>
-  <a href="#artists" class="hover:text-pink-400">ศิลปิน</a>
-  <a href="#music" class="hover:text-pink-400">เพลงใหม่</a>
-  <a href="#about" class="hover:text-pink-400">เกี่ยวกับ</a>
-  <a href="#contact" class="hover:text-pink-400">ติดต่อ</a>
-</nav>
- 
+    <a href="#home" class="hover:text-pink-400">หน้าแรก</a>
+    <a href="#artists" class="hover:text-pink-400">ศิลปิน</a>
+    <a href="#music" class="hover:text-pink-400">เพลงใหม่</a>
+    <a href="#about" class="hover:text-pink-400">เกี่ยวกับ</a>
+    <a href="#contact" class="hover:text-pink-400">ติดต่อ</a>
+  </nav>
+  
   <!-- Artists Section -->
   <section id="artists" class="py-16 bg-gray-900">
     <div class="container mx-auto px-6">
@@ -72,7 +67,7 @@
           <p class="text-gray-300">ศิลปินลูกครึ่งไทย-อังกฤษสุดปังจากกำแพงเพชร</p>
         </div>
         <div class="card-hover bg-gray-800 p-6 rounded-lg text-center">
-          <img src="469690395_122145577892339286_7155441008508316236_n" alt="กระเพรา แมวเหมียว (Cat Meaw)" class="mx-auto rounded-lg mb-4">
+          <img src="469690395_122145577892339286_7155441008508316236_n" alt="Cat Meaw" class="mx-auto rounded-lg mb-4">
           <h3 class="text-xl font-semibold">กระเพรา แมวเหมียว (Cat Meaw)</h3>
           <p class="text-gray-300">น้องสาวของ MKLG ก้านกล้วย</p>
         </div>
@@ -92,11 +87,11 @@
           เบราว์เซอร์ของคุณรองรับการเล่นไฟล์เสียง
         </audio>
         <h3 class="text-2xl font-semibold mb-2">ความรักครั้งนี้สมหวังตลอดไป</h3>
-      <p>ฟังเพลงฮิตใหม่ล่าสุดจากค่าย เสียงใหญ่เรคคอร์ด ที่กำลังมาแรงใน TikTok และ YouTube!</p>
-      <audio controls class="w-full">
-        <source src=".ความรักครั้งนี้สมหวังตลอดไป (Remastered 2025).mp3" type="audio/mp3">
-        เบราว์เซอร์ของคุณรองรับการเล่นเสียง
-      </audio>
+        <p>ฟังเพลงฮิตใหม่ล่าสุดจากค่าย เสียงใหญ่เรคคอร์ด ที่กำลังมาแรงใน TikTok และ YouTube!</p>
+        <audio controls class="w-full">
+          <source src=".ความรักครั้งนี้สมหวังตลอดไป (Remastered 2025).mp3" type="audio/mp3">
+          เบราว์เซอร์ของคุณรองรับการเล่นเสียง
+        </audio>
       </div>
     </div>
   </section>
@@ -113,18 +108,35 @@
   </section>
 
   <!-- Contact Section -->
- <section id="contact" class="py-16 gradient-bg"> 
-   <div class="container mx-auto px-6"> 
-     <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-xl p-8 text-gray-800"> 
-       <h2 class="text-3xl font-bold text-center mb-8">ติดต่อค่าย</h2> <form class="space-y-6" onsubmit="handleSubmit(event)"> 
-         <div><label class="block font-medium mb-2">ชื่อ-นามสกุล</label><input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="กรอกชื่อ-นามสกุล"> </div> 
-         <div> <label class="block font-medium mb-2">อีเมล</label> <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="example@mail.com"> </div> 
-         <div> <label class="block font-medium mb-2">ข้อความ</label> <textarea required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" rows="4" placeholder="พิมพ์ข้อความของคุณ..."></textarea> </div> 
-         <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-pink-700 transition duration-300"> ส่งข้อความ 🎵 </button> 
-</form> 
-  <div id="successMsg" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-  ✅ ขอบคุณที่ติดต่อเรา! ทีมงานจะตอบกลับในเร็ว ๆ นี้
-</div>
+  <section id="contact" class="py-16 gradient-bg">
+    <div class="container mx-auto px-6">
+      <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-xl p-8 text-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-8">ติดต่อค่าย</h2>
+        
+        <!-- Form -->
+        <form id="contact-form" class="space-y-6" onsubmit="sendEmail(event)">
+          <div>
+            <label class="block font-medium mb-2">ชื่อ-นามสกุล</label>
+            <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="กรอกชื่อ-นามสกุล">
+          </div>
+          <div>
+            <label class="block font-medium mb-2">อีเมล</label>
+            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="example@mail.com">
+          </div>
+          <div>
+            <label class="block font-medium mb-2">ข้อความ</label>
+            <textarea name="message" required rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="พิมพ์ข้อความของคุณ..."></textarea>
+          </div>
+          <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-pink-700 transition duration-300">
+            ส่งข้อความ 🎵
+          </button>
+        </form>
+
+        <!-- Success Message -->
+        <div id="successMsg" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+          ✅ ขอบคุณที่ติดต่อเรา! ทีมงานจะตอบกลับในเร็ว ๆ นี้
+        </div>
+
         <!-- ช่องทางโซเชียล -->
         <div class="mt-10 text-center">
           <h3 class="text-xl font-semibold mb-4">ช่องทางการติดต่อ</h3>
@@ -132,15 +144,10 @@
             <a href="https://www.instagram.com/bigsound_2022/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100083223202133&locale=th_TH" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://www.youtube.com/@BigsoundRecords-2022" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="patongmusicfunny@gmail.com" class="hover:text-green-600 transition">
-              ✉️
-            </a>
+            <a href="mailto:patongmusicfunny@gmail.com" class="hover:text-green-600"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
 
-        <div id="successMsg" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-          ✅ ขอบคุณที่ติดต่อเรา! ทีมงานจะตอบกลับในเร็ว ๆ นี้
-        </div>
       </div>
     </div>
   </section>
@@ -151,66 +158,32 @@
     <h3 class="text-xl font-bold mb-2">เสียงใหญ่เรคคอร์ด</h3>
     <p class="text-gray-400 mb-4">© 2025 SiangYai Records. All rights reserved.</p>
     <div class="flex justify-center gap-6 text-gray-400 text-2xl">
-  <a href="https://www.instagram.com/bigsound_2022/" target="_blank" class="hover:text-pink-500">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=100083223202133&locale=th_TH" target="_blank" class="hover:text-blue-600">
-    <i class="fa-brands fa-facebook-f"></i>
-  </a>
-  <a href="https://www.youtube.com/@BigsoundRecords-2022" target="_blank" class="hover:text-red-600">
-    <i class="fa-brands fa-youtube"></i>
-  </a>
-  <a href="mailto:patongmusicfunny@gmail.com" class="hover:text-green-600">
-    <i class="fa-solid fa-envelope"></i>
-  </a>
-</div>
+      <a href="https://www.instagram.com/bigsound_2022/" target="_blank" class="hover:text-pink-500"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100083223202133&locale=th_TH" target="_blank" class="hover:text-blue-600"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/@BigsoundRecords-2022" target="_blank" class="hover:text-red-600"><i class="fa-brands fa-youtube"></i></a>
+      <a href="mailto:patongmusicfunny@gmail.com" class="hover:text-green-600"><i class="fa-solid fa-envelope"></i></a>
+    </div>
   </footer>
 
-  <!-- Script -->
+  <!-- EmailJS Script -->
   <script>
-    function handleSubmit(event) {
+    function sendEmail(event) {
       event.preventDefault();
-      document.getElementById("successMsg").classList.remove("hidden");
-      event.target.reset();
-      setTimeout(() => {
-        document.getElementById("successMsg").classList.add("hidden");
-      }, 5000);
+
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', '#contact-form')
+        .then(() => {
+          document.getElementById("successMsg").classList.remove("hidden");
+          event.target.reset();
+
+          setTimeout(() => {
+            document.getElementById("successMsg").classList.add("hidden");
+          }, 5000);
+        }, (error) => {
+          alert("เกิดข้อผิดพลาด: " + error.text);
+          console.error(error);
+        });
     }
   </script>
 
-  <!-- EmailJS Script -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  // เริ่มต้น EmailJS ด้วย User ID ของคุณ
-  emailjs.init("YOUR_USER_ID"); // ← เปลี่ยนเป็น User ID จาก EmailJS
-
-  // ฟังก์ชันส่งอีเมลเมื่อกด submit
-  function sendEmail(event) {
-    event.preventDefault(); // ป้องกันการ reload หน้า
-
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', '#contact-form') // ← เปลี่ยนเป็น Service ID และ Template ID ของคุณ
-      .then(() => {
-        // แสดงข้อความสำเร็จ
-        document.getElementById("successMsg").classList.remove("hidden");
-        event.target.reset(); // ล้างฟอร์ม
-
-        // ซ่อนข้อความหลัง 5 วินาที
-        setTimeout(() => {
-          document.getElementById("successMsg").classList.add("hidden");
-        }, 5000);
-      }, (error) => {
-        // แจ้งเตือนเมื่อเกิดข้อผิดพลาด
-        alert("เกิดข้อผิดพลาด: " + error.text);
-      });
-  }
-</script>
-
 </body>
-</html> 
-
-
-
-
-
-
-
+</html>
