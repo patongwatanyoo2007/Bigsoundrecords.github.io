@@ -167,23 +167,27 @@
 
   <!-- EmailJS Script -->
   <script>
-    function sendEmail(event) {
-      event.preventDefault();
+  emailjs.init("user_ABC123xyz"); // Public Key ของคุณ
 
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', '#contact-form')
-        .then(() => {
-          document.getElementById("successMsg").classList.remove("hidden");
-          event.target.reset();
+  function sendEmail(event) {
+    event.preventDefault();
 
-          setTimeout(() => {
-            document.getElementById("successMsg").classList.add("hidden");
-          }, 5000);
-        }, (error) => {
-          alert("เกิดข้อผิดพลาด: " + error.text);
-          console.error(error);
-        });
-    }
-  </script>
+    emailjs.sendForm('service_XYZ123', 'template_123ABC', '#contact-form')
+      .then(() => {
+        document.getElementById("successMsg").classList.remove("hidden");
+        event.target.reset();
+
+        setTimeout(() => {
+          document.getElementById("successMsg").classList.add("hidden");
+        }, 5000);
+      }, (error) => {
+        alert("เกิดข้อผิดพลาด: " + error.text);
+        console.error(error);
+      });
+  }
+</script>
+
 
 </body>
 </html>
+
